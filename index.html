@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h2>MAAZFOLIO</h2>
+
+    <div>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <span class="toggle-theme"><i class="fas fa-moon"></i></span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Hi, I'm <span>M G MAAZ </span></h1>
+    <p><span id="typing"></span></p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://i.postimg.cc/cLyj6wCy/1744520753212.jpg" width="200" height="200" alt="My Photo">
+    <p>Hello! 𝙄 𝙖𝙢 𝙗. 𝙨𝙘 𝙨𝙩𝙪𝙙𝙚𝙣𝙩👨‍🎓 || 𝙏𝙝𝙞𝙧𝙪𝙫𝙖𝙡𝙡𝙪𝙫𝙖𝙧 𝙪𝙣𝙞𝙫𝙚𝙧𝙨𝙞𝙩𝙮🎓||🧠 𝙘𝙤𝙙𝙞𝙣𝙜 𝙞𝙨 𝙩𝙝𝙚 𝙬𝙖𝙮 𝙤𝙛 𝙞𝙣𝙣𝙤𝙫𝙖𝙩𝙞𝙤𝙣 || 💻𝙘𝙤𝙢𝙥𝙪𝙩𝙚𝙧 𝙨𝙘𝙞𝙚𝙣𝙘𝙚 𝙨𝙩𝙪𝙙𝙚𝙣𝙩 𝙬𝙞𝙩𝙝 𝙖 𝙋𝙖𝙨𝙨𝙞𝙤𝙣 𝙛𝙤𝙧 𝙨𝙝𝙖𝙥𝙞𝙣𝙜 𝙛𝙪𝙩𝙪𝙧𝙚 𝙤𝙛 𝙘𝙤𝙢𝙥𝙪𝙩𝙚𝙧 𝙬𝙤𝙧𝙡𝙙 🪩|| 𝘾𝙤𝙢𝙢𝙞𝙩𝙩𝙚𝙙 𝙩𝙤 𝙡𝙚𝙖𝙧𝙣𝙞𝙣𝙜📓 𝙖𝙣𝙙 𝙜𝙧𝙤𝙬𝙞𝙣𝙜 𝙞𝙣 𝙏𝙚𝙘𝙝 𝙁𝙞𝙚𝙡𝙙🖥 .</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Short description of the project.</p>
+        <a href="#" target="_blank">GitHub</a> <a href="#" target="_blank">Demo</a>
+      </div>
+      <div class="">
+        <img src="" alt=>
+        <h3></h3>
+        <p></p>
+        <a href="#" target="_blank"></a> <a href="#" target="_blank"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <p>c++</p>
+      <div class="bar"><span style="width:90%"></span></div>
+    </div>
+    <div class="skill">
+      <p>java </p>
+      <div class="bar"><span style="width:85%"></span></div>
+    </div>
+    <div class="skill">
+      <p>mysql</p>
+      <div class="bar"><span style="width:80%"></span></div>
+    </div>
+    <div class="skill">
+      <p>Python</p>
+      <div class="bar"><span style="width:75%"></span></div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume">
+    <h2>Resume / Experience</h2>
+    <p><strong>Education:</strong>2nd year of  BSc in Computer Science</p>
+    <p><strong></strong></p>
+    <p><strong>Knowledge :</strong>Microsoft office, C , C++ , Java ,MySql </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+    <div class="socials">
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio | All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Global */
+* {margin:0; padding:0; box-sizing:border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family:'Poppins', sans-serif;
+  line-height:1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+:root {
+  --primary:#4f46e5;
+  --bg:#fff;
+  --text:#333;
+  --card:#f9f9f9;
+}
+[data-theme="dark"] {
+  --bg:#1a1a1a;
+  --text:#f1f1f1;
+  --card:#2a2a2a;
+}
+section {padding:80px 10%; text-align:center;}
+h1,h2,h3 {margin-bottom:20px;}
+a {text-decoration:none; color:var(--primary);}
+.btn {
+  padding:10px 20px;
+  background:var(--primary);
+  color:#fff;
+  border-radius:30px;
+  transition:0.3s;
+}
+.btn:hover {opacity:0.8;}
+img {max-width:100%; border-radius:10px;}
+
+/* Navbar */
+nav {
+  position:fixed; top:0; left:0; right:0;
+  background:var(--bg);
+  padding:15px 10%;
+  display:flex; justify-content:space-between; align-items:center;
+  box-shadow:0 2px 5px rgba(0,0,0,0.1);
+  z-index:1000;
+}
+nav a {margin-left:20px; font-weight:500;}
+.toggle-theme {cursor:pointer; margin-left:20px;}
+
+/* Hero */
+#hero {
+  height:100vh;
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+}
+#hero h1 {font-size:2.5rem;}
+#hero span {color:var(--primary);}
+#typing {color:var(--primary); font-weight:600;}
+
+/* Projects */
+.projects {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+.card {
+  background:var(--card);
+  padding:20px;
+  border-radius:15px;
+  transition:transform 0.3s;
+}
+.card:hover {transform:translateY(-5px);}
+.card img {border-radius:10px; margin-bottom:10px;}
+
+/* Skills */
+.skill {margin-bottom:20px;}
+.bar {
+  background:#ddd;
+  border-radius:10px;
+  overflow:hidden;
+}
+.bar span {
+  display:block;
+  height:10px;
+  background:var(--primary);
+}
+
+/* Contact */
+form {max-width:500px; margin:auto; display:flex; flex-direction:column;}
+form input, form textarea {
+  margin:10px 0; padding:10px;
+  border:1px solid #ccc;
+  border-radius:5px;
+}
+.socials a {margin:0 10px; font-size:1.5rem; color:var(--primary);}
+
+/* Footer */
+footer {
+  background:var(--card);
+  text-align:center;
+  padding:20px;
+  margin-top:50px;
+}
